@@ -442,5 +442,18 @@
     }
   ],
   "categories": [],
-  "otps": []
+  "otps": [
+    {
+      "id": "8e074e09-26fc-45d4-ac66-b0eeb50551db",
+      "email": "test@test.com",
+      "code": "137924",
+      "expiresAt": 1763811432841
+    },
+    {
+      "id": "350644d2-9ca2-4f55-a3fc-2d9eb76ceca0",
+      "email": "test@test.com",
+      "code": "492350",
+      "expiresAt": 1763811465666
+    }
+  ]
 }

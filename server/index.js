@@ -6,6 +6,7 @@ const { Server } = require('socket.io')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const { v4: uuidv4 } = require('uuid')
+const nodemailer = require('nodemailer')
 const store = require('./store')
 const validate = require('./validate')
 const schemas = require('./schemas')
@@ -16,6 +17,15 @@ app.use(express.json())
 
 const PORT = process.env.PORT || 4000
 const JWT_SECRET = process.env.JWT_SECRET || 'dev_secret'
+
+// Email configuration
+const transporter = nodemailer.createTransport({
+  service: process.env.EMAIL_SERVICE || 'gmail',
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS
+  }
+})
 
 store.ensureFile()
 
@@ -92,7 +102,7 @@ app.get('/auth/me', (req, res) => {
   } catch (err) { return res.status(401).json({ error: 'invalid token' }) }
 })
 
-app.post('/auth/request-otp', (req, res) => {
+app.post('/auth/request-otp', async (req, res) => {
   const { email } = req.body
   if (!email) return res.status(400).json({ error: 'email required' })
   const users = store.getAll('users')
@@ -102,8 +112,38 @@ app.post('/auth/request-otp', (req, res) => {
   const otps = store.getAll('otps')
   otps.push({ id: uuidv4(), email, code, expiresAt: Date.now() + 15 * 60 * 1000 })
   store.saveAll('otps', otps)
-  console.log(`OTP for ${email}: ${code}`)
-  res.json({ ok: true })
+  
+  // Send email if configured, otherwise log to console
+  if (process.env.EMAIL_USER && process.env.EMAIL_PASS) {
+    try {
+      await transporter.sendMail({
+        from: process.env.EMAIL_USER,
+        to: email,
+        subject: 'StockFlux - Password Reset OTP',
+        html: `
+          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+            <h2 style="color: #2563eb;">Password Reset Request</h2>
+            <p>You requested to reset your password for StockFlux.</p>
+            <div style="background-color: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0;">
+              <p style="margin: 0; font-size: 14px; color: #6b7280;">Your OTP code is:</p>
+              <h1 style="margin: 10px 0; color: #1f2937; letter-spacing: 8px;">${code}</h1>
+            </div>
+            <p style="color: #6b7280; font-size: 14px;">This code will expire in 15 minutes.</p>
+            <p style="color: #6b7280; font-size: 14px;">If you didn't request this, please ignore this email.</p>
+          </div>
+        `
+      })
+      console.log(`OTP email sent to ${email}`)
+      res.json({ ok: true, message: 'OTP sent to your email' })
+    } catch (error) {
+      console.error('Email send error:', error)
+      console.log(`OTP for ${email}: ${code}`)
+      res.json({ ok: true, message: 'OTP generated (email failed, check console)' })
+    }
+  } else {
+    console.log(`\n=== OTP for ${email}: ${code} ===\n`)
+    res.json({ ok: true, message: 'OTP generated (check server console)' })
+  }
 })
 
 app.post('/auth/reset-password', async (req, res) => {
