@@ -1,0 +1,446 @@
+{
+  "users": [
+    {
+      "id": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "name": "Tanveer Pasha S",
+      "email": "786tanveers786786@gmail.com",
+      "password": "$2a$10$f/46gw7wDBtty3YvquoYeOemcjtFJzu2tDjSxbXLv55rTPyyv4PG2",
+      "createdAt": 1763789570768
+    },
+    {
+      "id": "d14c882c-9243-45f5-95c1-fc126643e3f3",
+      "name": "Tanveer Pasha S",
+      "email": "vvishu416@gmail.com",
+      "password": "$2a$10$ChCIrjcMrhjcqlXbJsfYSuhATK1DKcuSk0qHanSH8Y7URgP61LjXe",
+      "createdAt": 1763801852531
+    },
+    {
+      "id": "fc1c2cb3-1549-4ff5-ba7d-53f95acb1ab9",
+      "name": "Sajjad Pasha",
+      "email": "vishwasvishu2830@gmail.com",
+      "password": "$2a$10$4UHdsOJZ70rbKFEob.sg5eOJSjT18oBw6par8kye84IqV/cgddTFm",
+      "createdAt": 1763805669963
+    },
+    {
+      "id": "420d25c6-caf5-4d55-8b8a-809718649f00",
+      "name": "Sajjad Pasha",
+      "email": "tanveers7770@gmail.com",
+      "password": "$2a$10$gPPBH//SIfPS.PP6KnSHpO9xMIntHmHN1W3uTohJPMygZpMygKfh6",
+      "createdAt": 1763806495771
+    },
+    {
+      "id": "8a3eafa8-23ff-4211-89fc-6967d217e971",
+      "name": "Test User",
+      "email": "test@test.com",
+      "password": "$2a$10$.ePvtbeSb2G8dO4mqKiRbeVqFbOMnaD0AraildXGc5R1lNobsdJ3i",
+      "createdAt": 1763808868117
+    },
+    {
+      "id": "9e94e7fe-6e26-46b5-b35c-1654e3c62a4a",
+      "name": "User Two",
+      "email": "user2@test.com",
+      "password": "$2a$10$5xdkZ5Rdit/fH5txQ25ZQ.Ai59fWRUwrE32.3z08jYKjkNUtTVE3y",
+      "createdAt": 1763809117702
+    },
+    {
+      "id": "692bcdc1-ed5f-41dd-bce8-0bf26abd1355",
+      "name": "User A",
+      "email": "usera@test.com",
+      "password": "$2a$10$eOO/h.nxCetUtPAHB8w7J.5wFcmSme8M4zYzNHdzxP7.jisqxeGfC",
+      "createdAt": 1763809540737
+    },
+    {
+      "id": "fe4aeb4d-5871-4eba-8ed8-c6491c6211bb",
+      "name": "User B",
+      "email": "userb@test.com",
+      "password": "$2a$10$VEhOMOra1tpW/qYb4keH9ePB3uVBccgubQxjizSBkrHm/uabcx9wO",
+      "createdAt": 1763809540853
+    },
+    {
+      "id": "6c444813-dbd9-477a-8dd2-130e9c7c3ac5",
+      "name": "User A Test",
+      "email": "usera123@test.com",
+      "password": "$2a$10$LIdxs.ToCE8MgqKZ7alHxudNo7e.WgZjxyS0B6/Hv0oKy1PjeH/VO",
+      "createdAt": 1763809591329
+    },
+    {
+      "id": "d2a59be5-08be-4d56-ab7f-b3dfd5465a84",
+      "name": "User B Test",
+      "email": "userb123@test.com",
+      "password": "$2a$10$qKb0tJ.dpo62/Ufjl0VzwuGled.Eh.66MqvtNp2ChXhpxYipiVHB.",
+      "createdAt": 1763809608623
+    },
+    {
+      "id": "ee7cbd42-fb2c-4eeb-8af2-fc0fe543a430",
+      "name": "User B",
+      "email": "userb456@test.com",
+      "password": "$2a$10$Dm3iEj8/owGObsNyBa8iEuNdn4wDW.AuNlngYKx.8x.WXuBg4lGEG",
+      "createdAt": 1763809633967
+    }
+  ],
+  "products": [
+    {
+      "id": "c7254df2-ac50-429f-9356-3828f4364bd3",
+      "userId": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "name": "steel rods",
+      "sku": "SR-001",
+      "category": "Raw Materials",
+      "uom": "kg",
+      "reorderLevel": 50
+    },
+    {
+      "id": "f4aa5ade-a0d7-4544-b9aa-05f2d0401683",
+      "userId": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "name": "chairs",
+      "sku": "CH-001",
+      "category": "Finished Goods",
+      "uom": "pcs",
+      "reorderLevel": 20
+    },
+    {
+      "id": "681e7857-1ace-4daf-9682-505fa10d3cf1",
+      "userId": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "name": "laptops",
+      "sku": "LP-001",
+      "category": "Consumables",
+      "uom": "pcs",
+      "reorderLevel": 10
+    },
+    {
+      "id": "f95d9723-4ea4-42c7-b9cf-b16da4960e03",
+      "name": "steel rod",
+      "sku": "SR-001",
+      "category": "Raw Materials",
+      "uom": "units",
+      "reorderLevel": 20
+    },
+    {
+      "id": "6772ba6f-f772-4897-a372-f2a3e2c12a62",
+      "userId": "8a3eafa8-23ff-4211-89fc-6967d217e971",
+      "name": "Test Product",
+      "sku": "TEST-001",
+      "category": "Test",
+      "uom": "pcs",
+      "reorderLevel": 10
+    },
+    {
+      "id": "70a52a81-ef4c-453a-abb7-74cb4d19acf6",
+      "userId": "6c444813-dbd9-477a-8dd2-130e9c7c3ac5",
+      "name": "Product A",
+      "sku": "PROD-A",
+      "category": "Test",
+      "uom": "pcs",
+      "reorderLevel": 10
+    },
+    {
+      "id": "eb1e7e78-f5a4-4364-a478-673da2334e45",
+      "userId": "d2a59be5-08be-4d56-ab7f-b3dfd5465a84",
+      "name": "Product B",
+      "sku": "PROD-B",
+      "category": "Test",
+      "uom": "pcs",
+      "reorderLevel": 5
+    }
+  ],
+  "warehouses": [
+    {
+      "id": "d57c84b7-88b0-4ebf-885a-f6cfc209d74d",
+      "name": "shelf",
+      "address": "sss",
+      "type": "Production",
+      "createdAt": 1763808651395
+    }
+  ],
+  "locations": [],
+  "ledger": [
+    {
+      "id": "5add3647-9612-444f-80ea-f82ecc315a40",
+      "userId": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "sku": "LP-001",
+      "qty_change": 100,
+      "location": "UNPLACED",
+      "type": "initial",
+      "ts": 1763802156834,
+      "ref": null
+    },
+    {
+      "id": "a5ed0e34-e11f-45f2-9550-e976b042fdb1",
+      "userId": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "sku": "SR-001",
+      "qty_change": 100,
+      "location": "Main Warehouse",
+      "type": "receipt",
+      "ts": 1763802386161,
+      "ref": "cc51b3f3-ec22-4ef9-ac8b-937a9f98b3f0"
+    },
+    {
+      "id": "95d04f6f-4475-472a-8312-de98d6879729",
+      "userId": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "sku": "CH-001",
+      "qty_change": 50,
+      "location": "Main Warehouse",
+      "type": "receipt",
+      "ts": 1763802386162,
+      "ref": "cc51b3f3-ec22-4ef9-ac8b-937a9f98b3f0"
+    },
+    {
+      "id": "e08f86df-e1ab-4fee-86cc-f16cfb2c87cf",
+      "userId": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "sku": "CH-001",
+      "qty_change": -10,
+      "location": "Main Warehouse",
+      "type": "delivery",
+      "ts": 1763802516499,
+      "ref": "1907529f-3867-4e36-8ca8-5e9b2794930e"
+    },
+    {
+      "id": "1e2e8261-d84d-4c97-a672-475cc6d49446",
+      "userId": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "productId": "f4aa5ade-a0d7-4544-b9aa-05f2d0401683",
+      "productName": "chairs",
+      "sku": "CH-001",
+      "category": "Finished Goods",
+      "qty_change": -10,
+      "location": "Main Warehouse",
+      "type": "transfer",
+      "status": "done",
+      "ref": "aa007fe9-a169-475d-86ee-9cde583f844f",
+      "ts": 1763803675595
+    },
+    {
+      "id": "68e1f498-f366-4ebd-bfe4-7fa23a1aa763",
+      "userId": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "productId": "f4aa5ade-a0d7-4544-b9aa-05f2d0401683",
+      "productName": "chairs",
+      "sku": "CH-001",
+      "category": "Finished Goods",
+      "qty_change": 10,
+      "location": "Warehouse A",
+      "type": "transfer",
+      "status": "done",
+      "ref": "aa007fe9-a169-475d-86ee-9cde583f844f",
+      "ts": 1763803675595
+    },
+    {
+      "id": "034cbaa0-093a-432d-a7ed-7c4b9d2129c0",
+      "userId": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "productId": "f4aa5ade-a0d7-4544-b9aa-05f2d0401683",
+      "productName": "chairs",
+      "sku": "CH-001",
+      "category": "Finished Goods",
+      "qty_change": 5,
+      "location": "Main Warehouse",
+      "type": "adjustment",
+      "status": "done",
+      "ref": "8f9a8bf0-8cdc-4abf-a2fc-c2ccb9cee573",
+      "reason": "physical cc",
+      "ts": 1763804449094
+    },
+    {
+      "id": "f6dbc7cb-d3d4-4b51-ba82-3ba5d693f606",
+      "sku": "SR-001",
+      "qty_change": 50,
+      "location": "UNPLACED",
+      "type": "initial",
+      "ts": 1763808482448,
+      "ref": null
+    },
+    {
+      "id": "56ce9b02-8e1e-4a20-8576-f220fd48f803",
+      "sku": "SR-001",
+      "qty_change": 100,
+      "location": "Main Warehouse",
+      "type": "receipt",
+      "ts": 1763808578392,
+      "ref": "4d06d555-3a0a-418c-95c6-67e4643fa283"
+    },
+    {
+      "id": "ee1aed73-af46-4775-801f-d018c0aba583",
+      "productId": "f95d9723-4ea4-42c7-b9cf-b16da4960e03",
+      "productName": "steel rod",
+      "sku": "SR-001",
+      "category": "Raw Materials",
+      "qty_change": -20,
+      "location": "Main Warehouse",
+      "type": "transfer",
+      "status": "done",
+      "ref": "d7f96229-e8b1-4128-87f2-d54cf748ca33",
+      "ts": 1763808612982
+    },
+    {
+      "id": "89dd8b9f-22f8-4da1-8ebb-60336bb18640",
+      "productId": "f95d9723-4ea4-42c7-b9cf-b16da4960e03",
+      "productName": "steel rod",
+      "sku": "SR-001",
+      "category": "Raw Materials",
+      "qty_change": 20,
+      "location": "Warehouse A",
+      "type": "transfer",
+      "status": "done",
+      "ref": "d7f96229-e8b1-4128-87f2-d54cf748ca33",
+      "ts": 1763808612982
+    }
+  ],
+  "receipts": [
+    {
+      "id": "cc51b3f3-ec22-4ef9-ac8b-937a9f98b3f0",
+      "userId": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "supplier": "ABC steel co",
+      "warehouse": "Main Warehouse",
+      "expectedDate": "2025-11-22",
+      "status": "Done",
+      "items": [
+        {
+          "productId": "c7254df2-ac50-429f-9356-3828f4364bd3",
+          "productName": "steel rods",
+          "quantity": "100",
+          "unitPrice": "50.00"
+        },
+        {
+          "productId": "f4aa5ade-a0d7-4544-b9aa-05f2d0401683",
+          "productName": "chairs",
+          "quantity": "50",
+          "unitPrice": "200"
+        }
+      ],
+      "totalItems": 150,
+      "totalValue": 15000,
+      "ts": 1763802330609
+    },
+    {
+      "id": "4d06d555-3a0a-418c-95c6-67e4643fa283",
+      "supplier": "x",
+      "warehouse": "Main Warehouse",
+      "expectedDate": "2025-11-22",
+      "status": "Done",
+      "items": [
+        {
+          "productId": "f95d9723-4ea4-42c7-b9cf-b16da4960e03",
+          "productName": "steel rod",
+          "quantity": "100",
+          "unitPrice": "10"
+        }
+      ],
+      "totalItems": 100,
+      "totalValue": 1000,
+      "ts": 1763808574706
+    }
+  ],
+  "deliveries": [
+    {
+      "id": "1907529f-3867-4e36-8ca8-5e9b2794930e",
+      "userId": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "customer": "xyz corp",
+      "warehouse": "Main Warehouse",
+      "deliveryDate": "2025-11-22",
+      "status": "Done",
+      "items": [
+        {
+          "productId": "f4aa5ade-a0d7-4544-b9aa-05f2d0401683",
+          "productName": "chairs",
+          "quantity": "10"
+        }
+      ],
+      "totalItems": 10,
+      "ts": 1763802489050
+    },
+    {
+      "id": "6bfd029f-2208-4083-9fdc-a493f045f463",
+      "customer": "vcc",
+      "warehouse": "Main Warehouse",
+      "deliveryDate": "2025-11-22",
+      "status": "Done",
+      "items": [
+        {
+          "productId": "f95d9723-4ea4-42c7-b9cf-b16da4960e03",
+          "productName": "steel rod",
+          "quantity": "50"
+        }
+      ],
+      "totalItems": 50,
+      "ts": 1763808516976
+    }
+  ],
+  "transfers": [
+    {
+      "id": "707e5238-4d65-4d90-9703-d17b11d869bf",
+      "userId": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "fromWarehouse": "Main Warehouse",
+      "toWarehouse": "Warehouse A",
+      "transferDate": "2025-11-22",
+      "status": "Done",
+      "items": [
+        {
+          "productId": "f4aa5ade-a0d7-4544-b9aa-05f2d0401683",
+          "productName": "chairs",
+          "sku": "CH-001",
+          "quantity": 10
+        }
+      ],
+      "totalItems": 10,
+      "createdAt": 1763803286343
+    },
+    {
+      "id": "aa007fe9-a169-475d-86ee-9cde583f844f",
+      "userId": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "fromWarehouse": "Main Warehouse",
+      "toWarehouse": "Warehouse A",
+      "transferDate": "2025-11-22",
+      "status": "Done",
+      "items": [
+        {
+          "productId": "f4aa5ade-a0d7-4544-b9aa-05f2d0401683",
+          "productName": "chairs",
+          "sku": "CH-001",
+          "quantity": 10
+        }
+      ],
+      "totalItems": 10,
+      "createdAt": 1763803671604,
+      "validatedAt": 1763803675601
+    },
+    {
+      "id": "d7f96229-e8b1-4128-87f2-d54cf748ca33",
+      "fromWarehouse": "Main Warehouse",
+      "toWarehouse": "Warehouse A",
+      "transferDate": "2025-11-22",
+      "status": "Done",
+      "items": [
+        {
+          "productId": "f95d9723-4ea4-42c7-b9cf-b16da4960e03",
+          "productName": "steel rod",
+          "sku": "SR-001",
+          "quantity": 20
+        }
+      ],
+      "totalItems": 20,
+      "createdAt": 1763808608988,
+      "validatedAt": 1763808612988
+    }
+  ],
+  "adjustments": [
+    {
+      "id": "8f9a8bf0-8cdc-4abf-a2fc-c2ccb9cee573",
+      "userId": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "warehouse": "Main Warehouse",
+      "adjustmentDate": "2025-11-22",
+      "reason": "physical cc",
+      "status": "Done",
+      "items": [
+        {
+          "productId": "f4aa5ade-a0d7-4544-b9aa-05f2d0401683",
+          "productName": "chairs",
+          "sku": "CH-001",
+          "systemQty": 30,
+          "countedQty": 35,
+          "difference": 5
+        }
+      ],
+      "totalItems": 1,
+      "createdAt": 1763804440193,
+      "validatedAt": 1763804449097
+    }
+  ],
+  "categories": [],
+  "otps": []
+}

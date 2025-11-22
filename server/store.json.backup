@@ -1,0 +1,246 @@
+{
+  "users": [
+    {
+      "id": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "name": "Tanveer Pasha S",
+      "email": "786tanveers786786@gmail.com",
+      "password": "$2a$10$f/46gw7wDBtty3YvquoYeOemcjtFJzu2tDjSxbXLv55rTPyyv4PG2",
+      "createdAt": 1763789570768
+    },
+    {
+      "id": "d14c882c-9243-45f5-95c1-fc126643e3f3",
+      "name": "Tanveer Pasha S",
+      "email": "vvishu416@gmail.com",
+      "password": "$2a$10$ChCIrjcMrhjcqlXbJsfYSuhATK1DKcuSk0qHanSH8Y7URgP61LjXe",
+      "createdAt": 1763801852531
+    },
+    {
+      "id": "fc1c2cb3-1549-4ff5-ba7d-53f95acb1ab9",
+      "name": "Sajjad Pasha",
+      "email": "vishwasvishu2830@gmail.com",
+      "password": "$2a$10$4UHdsOJZ70rbKFEob.sg5eOJSjT18oBw6par8kye84IqV/cgddTFm",
+      "createdAt": 1763805669963
+    },
+    {
+      "id": "420d25c6-caf5-4d55-8b8a-809718649f00",
+      "name": "Sajjad Pasha",
+      "email": "tanveers7770@gmail.com",
+      "password": "$2a$10$gPPBH//SIfPS.PP6KnSHpO9xMIntHmHN1W3uTohJPMygZpMygKfh6",
+      "createdAt": 1763806495771
+    }
+  ],
+  "products": [
+    {
+      "id": "c7254df2-ac50-429f-9356-3828f4364bd3",
+      "userId": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "name": "steel rods",
+      "sku": "SR-001",
+      "category": "Raw Materials",
+      "uom": "kg",
+      "reorderLevel": 50
+    },
+    {
+      "id": "f4aa5ade-a0d7-4544-b9aa-05f2d0401683",
+      "userId": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "name": "chairs",
+      "sku": "CH-001",
+      "category": "Finished Goods",
+      "uom": "pcs",
+      "reorderLevel": 20
+    },
+    {
+      "id": "681e7857-1ace-4daf-9682-505fa10d3cf1",
+      "userId": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "name": "laptops",
+      "sku": "LP-001",
+      "category": "Consumables",
+      "uom": "pcs",
+      "reorderLevel": 10
+    }
+  ],
+  "warehouses": [],
+  "locations": [],
+  "ledger": [
+    {
+      "id": "5add3647-9612-444f-80ea-f82ecc315a40",
+      "sku": "LP-001",
+      "qty_change": 100,
+      "location": "UNPLACED",
+      "type": "initial",
+      "ts": 1763802156834,
+      "ref": null
+    },
+    {
+      "id": "a5ed0e34-e11f-45f2-9550-e976b042fdb1",
+      "sku": "SR-001",
+      "qty_change": 100,
+      "location": "Main Warehouse",
+      "type": "receipt",
+      "ts": 1763802386161,
+      "ref": "cc51b3f3-ec22-4ef9-ac8b-937a9f98b3f0"
+    },
+    {
+      "id": "95d04f6f-4475-472a-8312-de98d6879729",
+      "sku": "CH-001",
+      "qty_change": 50,
+      "location": "Main Warehouse",
+      "type": "receipt",
+      "ts": 1763802386162,
+      "ref": "cc51b3f3-ec22-4ef9-ac8b-937a9f98b3f0"
+    },
+    {
+      "id": "e08f86df-e1ab-4fee-86cc-f16cfb2c87cf",
+      "sku": "CH-001",
+      "qty_change": -10,
+      "location": "Main Warehouse",
+      "type": "delivery",
+      "ts": 1763802516499,
+      "ref": "1907529f-3867-4e36-8ca8-5e9b2794930e"
+    },
+    {
+      "id": "1e2e8261-d84d-4c97-a672-475cc6d49446",
+      "productId": "f4aa5ade-a0d7-4544-b9aa-05f2d0401683",
+      "productName": "chairs",
+      "sku": "CH-001",
+      "category": "Finished Goods",
+      "qty_change": -10,
+      "location": "Main Warehouse",
+      "type": "transfer",
+      "status": "done",
+      "ref": "aa007fe9-a169-475d-86ee-9cde583f844f",
+      "ts": 1763803675595
+    },
+    {
+      "id": "68e1f498-f366-4ebd-bfe4-7fa23a1aa763",
+      "productId": "f4aa5ade-a0d7-4544-b9aa-05f2d0401683",
+      "productName": "chairs",
+      "sku": "CH-001",
+      "category": "Finished Goods",
+      "qty_change": 10,
+      "location": "Warehouse A",
+      "type": "transfer",
+      "status": "done",
+      "ref": "aa007fe9-a169-475d-86ee-9cde583f844f",
+      "ts": 1763803675595
+    },
+    {
+      "id": "034cbaa0-093a-432d-a7ed-7c4b9d2129c0",
+      "productId": "f4aa5ade-a0d7-4544-b9aa-05f2d0401683",
+      "productName": "chairs",
+      "sku": "CH-001",
+      "category": "Finished Goods",
+      "qty_change": 5,
+      "location": "Main Warehouse",
+      "type": "adjustment",
+      "status": "done",
+      "ref": "8f9a8bf0-8cdc-4abf-a2fc-c2ccb9cee573",
+      "reason": "physical cc",
+      "ts": 1763804449094
+    }
+  ],
+  "receipts": [
+    {
+      "id": "cc51b3f3-ec22-4ef9-ac8b-937a9f98b3f0",`n      "userId": "01a4df68-6a1f-4169-a56f-3f24e644f5f3",
+      "supplier": "ABC steel co",
+      "warehouse": "Main Warehouse",
+      "expectedDate": "2025-11-22",
+      "status": "Done",
+      "items": [
+        {
+          "productId": "c7254df2-ac50-429f-9356-3828f4364bd3",
+          "productName": "steel rods",
+          "quantity": "100",
+          "unitPrice": "50.00"
+        },
+        {
+          "productId": "f4aa5ade-a0d7-4544-b9aa-05f2d0401683",
+          "productName": "chairs",
+          "quantity": "50",
+          "unitPrice": "200"
+        }
+      ],
+      "totalItems": 150,
+      "totalValue": 15000,
+      "ts": 1763802330609
+    }
+  ],
+  "deliveries": [
+    {
+      "id": "1907529f-3867-4e36-8ca8-5e9b2794930e",
+      "customer": "xyz corp",
+      "warehouse": "Main Warehouse",
+      "deliveryDate": "2025-11-22",
+      "status": "Done",
+      "items": [
+        {
+          "productId": "f4aa5ade-a0d7-4544-b9aa-05f2d0401683",
+          "productName": "chairs",
+          "quantity": "10"
+        }
+      ],
+      "totalItems": 10,
+      "ts": 1763802489050
+    }
+  ],
+  "transfers": [
+    {
+      "id": "707e5238-4d65-4d90-9703-d17b11d869bf",
+      "fromWarehouse": "Main Warehouse",
+      "toWarehouse": "Warehouse A",
+      "transferDate": "2025-11-22",
+      "status": "Done",
+      "items": [
+        {
+          "productId": "f4aa5ade-a0d7-4544-b9aa-05f2d0401683",
+          "productName": "chairs",
+          "sku": "CH-001",
+          "quantity": 10
+        }
+      ],
+      "totalItems": 10,
+      "createdAt": 1763803286343
+    },
+    {
+      "id": "aa007fe9-a169-475d-86ee-9cde583f844f",
+      "fromWarehouse": "Main Warehouse",
+      "toWarehouse": "Warehouse A",
+      "transferDate": "2025-11-22",
+      "status": "Done",
+      "items": [
+        {
+          "productId": "f4aa5ade-a0d7-4544-b9aa-05f2d0401683",
+          "productName": "chairs",
+          "sku": "CH-001",
+          "quantity": 10
+        }
+      ],
+      "totalItems": 10,
+      "createdAt": 1763803671604,
+      "validatedAt": 1763803675601
+    }
+  ],
+  "adjustments": [
+    {
+      "id": "8f9a8bf0-8cdc-4abf-a2fc-c2ccb9cee573",
+      "warehouse": "Main Warehouse",
+      "adjustmentDate": "2025-11-22",
+      "reason": "physical cc",
+      "status": "Done",
+      "items": [
+        {
+          "productId": "f4aa5ade-a0d7-4544-b9aa-05f2d0401683",
+          "productName": "chairs",
+          "sku": "CH-001",
+          "systemQty": 30,
+          "countedQty": 35,
+          "difference": 5
+        }
+      ],
+      "totalItems": 1,
+      "createdAt": 1763804440193,
+      "validatedAt": 1763804449097
+    }
+  ],
+  "categories": [],
+  "otps": []
+}
