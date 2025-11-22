@@ -218,32 +218,3 @@ PORT=4000
 JWT_SECRET=your-secret-key
 ```
 
-## 🚀 Deployment Notes
-
-- Backend can be deployed to any Node.js hosting (Heroku, Railway, etc.)
-- Frontend can be deployed to Vercel, Netlify, or any static hosting
-- Update API base URL in frontend for production
-- Use production database instead of JSON files for scale
-
-## 📄 License
-
-This project is private and proprietary.
-
-## 👥 Contributors
-
-- Tanveer Pasha S - Full Stack Development
-
-## 🐛 Known Issues
-
-None at this time.
-
-## 🔮 Future Enhancements
-
-- [ ] PostgreSQL/MongoDB integration
-- [ ] Barcode scanning support
-- [ ] Advanced reporting and analytics
-- [ ] Mobile app (React Native)
-- [ ] Bulk import/export (CSV, Excel)
-- [ ] Multi-currency support
-- [ ] Supplier management
-- [ ] Purchase order system
